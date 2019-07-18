@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dice Simulator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>Dice Game</h1>
+        <h2>Beat the house and win your bet!</h2>
+        <hr>
+
+        <table>
+            <tr>
+                <td>Funds: $<span id="funds">5000</span></td>
+                <td>Bet:<input id="bet-input" type="number" step='5' value='100'><button id="play-btn">PLAY</button></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>House Roll</p>
+                    <img id="house-die1" src="media/question-mark.png">
+                    <img id="house-die2" src="media/question-mark.png">
+                    <p>House total: <span id='total-house'>???</span></p>
+                </td>
+                <td>
+                    <p>Your Roll</p>
+                    <img id="player-die1" src="media/question-mark.png">
+                    <img id="player-die2" src="media/question-mark.png">
+                    <p>Your total: <span id='total-player'>???</span></p>
+                </td>
+            <tr>
+                <td colspan="2" id='win-alert'></td>
+            </tr>
+        </table>
+    
+        <button id="purchase-btn">Buy Riches & Luxury</button>
+
+        <h3 id='inform-text'>You got <span id='loot-name'></span></h3>
+        
+        <h2>Your Loot</h2>
+        <p id="loot"></p>
+
+
+        <audio id='dice-roll' src="media/dice.mp3" type="audio/mpeg"></audio>
+
+        <!-- JavaScript -->
+        <script src="main.js"></script>
+    </body>
+</html>
